@@ -5,15 +5,15 @@ import axios from "axios";
 import 'leaflet/dist/leaflet.css';
 import MyTable from './Component/WeatherRecordTable'
 import L from 'leaflet';
-import TablePagination from '@mui/material/TablePagination';
+
 import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
 
 import AirIcon from '@mui/icons-material/Air';
 import CircularProgress from '@mui/material/CircularProgress';
 const App=()=> {
   const [weatherData, setWeatherData] = useState([]);
-  const [city, setCity] = useState("London");
-  const [MapShow, setMapShow] = useState(true);
+  
+  
   const[Icons,setIcons]= useState([
     { id:"01d" ,status:" sunny.png"},
  {id:"01n",status: "sunny.png"},
